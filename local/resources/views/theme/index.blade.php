@@ -43,12 +43,39 @@
     background-color: #fff;
   }
   .result{
-    font-size: 40px;
+    font-size: 20px;
   }
   .widget{
     border: 1px solid white;
     padding: 5px;
     margin-bottom: 10px;
+  }
+  p a{
+    color: #fff;
+  }
+  h4 a{
+    color: #fff;
+  }
+  h4 a:hover{
+    color: #fff;
+  }
+  p a:hover{
+    color: #ff1;
+  }
+  p a i{
+    font-size: 20px;
+  }
+  .top-text{
+      margin-top: 10px;
+    }
+  @media only screen and (max-width: 600px) {
+    .converter{
+      height: auto;
+    }
+    .convertSection{
+      height: auto;
+    }
+
   }
 </style>
 <body>
@@ -58,12 +85,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-          <h3>Currency Converter <img src="{{asset('images/flag.png')}}" width="15px"></h3>
+          <h2>Currency Converter <img src="{{asset('images/flag.webp')}}" width="15px"></h2>
       </div>
       <div class="col-md-4 text-right form-group">
         <div class="row">
-          <div clss="col-md-5" style="margin-top: 10px;">
-            showing exchange rate of  
+          <div clss="col-md-5 top-text">
+            <p>showing exchange rate of </p>
           </div>
           <div class="col-md-7">
             <input type="text" class="form-control" name="filter_date" id="filter_date" value="{{$datas['date']}}" style="border: none;background-color: transparent;color: #fff;border-bottom: 1px solid #fff;">
@@ -72,7 +99,7 @@
       </div>
       <div class="col-md-12">
         <div class="container convertSection">
-          <h3 class="text-center">Welcome to Real Time Currency Converter</h3>
+          <h2 class="text-center">Welcome to Real Time Currency Converter</h2>
           <p class="text-center">These are the standard rates by Nepal Rastra Bank <br> {{\Carbon\Carbon::parse($datas['date'])->format('d F, Y')}}</p>
           <form>
           <div class="row text-center form-group converter">
@@ -121,12 +148,12 @@
         </div>
       </div>
       <div class="col-md-8">
-        <h3>Monthly Exchange Rates</h3><br>
+        <h2>Monthly Exchange Rates</h2><br>
         <div></div>
         <div class="chart" id="line-chart" style="width:100%;height: 250px;"></div>
         <br>
         <div class="">
-          <h3>Nepal Currency Exchange Rate of <br>{{\Carbon\Carbon::parse($datas['date'])->format('d F, Y')}} </h3>
+          <h2>Nepal Currency Exchange Rate of <br>{{\Carbon\Carbon::parse($datas['date'])->format('d F, Y')}} </h2>
           <table class="table table-bordered table-striped table-hover" id="currencyExchangeRate">
             <tr>
               <thead>
@@ -150,16 +177,36 @@
         </div>
       </div>
       <div class="col-md-4">
-        <h3>Widgets</h3>
+        <h2>Widgets</h2>
         <br>
         <div class="widget">
-          <h3>Useful Links</h3>
+          <h2>Useful Links</h2>
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><a href="https://www.nrb.org.np/forex/" target="_blank">NRB exchange rates</a></li>
             <li class="list-group-item"><a href="https://www.hamropatro.com/" target="_blank">Hamro Patro</a></li>
             <li class="list-group-item"><a href="https://rollingnexus.com/" target="_blank">Rolling Nexus</a></li>
-            <li class="list-group-item"><a href="https://rollingnexus.com/" target="_blank">Rolling Nexus</a></li>
           </ul>
+        </div>
+        <div class="widget">
+          <h2>Author</h2>
+          <div class="row">
+            <div class="well profile col-md-12 col-lg-12 col-xs-12 text-center">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <figure>
+                     <img src="{{asset('images/jinesh.webp')}}" alt="" class="img-circle" style="width:80%;" id="user-img">
+                </figure>
+                <h4 style="text-align:center;"><strong id="user-name"><a href="http://jineshsubedi.com.np/">Jinesh Subedi</a></strong></h4>
+                <p style="text-align: center; overflow-wrap: break-word; text-decoration: none;"><a href="maito:jinesh1094@gmail.com">jinesh1094@gmail.com</a></p>
+                <p style="text-align: center;" id="user-role">Web Developer</p>
+                <p>
+                  <a href="https://www.facebook.com/jinesh1094" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://twitter.com/JineshSubedi" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                  <a href="https://www.linkedin.com/in/jinesh-subedi-541550154/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/jinesh.officials/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="widget">
           <div class="fb-page" data-href="https://www.facebook.com/jineshcast/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jineshcast/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jineshcast/">Jineshsubedi.com.np</a></blockquote></div>
@@ -172,6 +219,7 @@
 <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script defer src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script defer src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 <script>
   $( function() {
     $( "#filter_date" ).datepicker({
