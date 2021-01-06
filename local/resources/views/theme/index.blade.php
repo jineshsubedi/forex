@@ -2,9 +2,9 @@
 <html>
 <head>
   <title>Nepalese Currency Exchange - Forex</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+  <!-- <link rel="stylesheet" href="" > -->
+  <!-- <link rel="stylesheet" href=""> -->
+  <!-- <link rel="stylesheet" href=""> -->
   <link rel="icon" href="{{asset('images/flag.png')}}" type="image/gif" sizes="16x16">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
   <meta name="title" content="Nepali Currency Converter">
@@ -148,10 +148,12 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row">
       <div class="col-md-8">
         <h2>Monthly Exchange Rates</h2><br>
         <div></div>
-        <div class="chart" id="line-chart" style="width:100%;height: 250px;"></div>
+        <div class="chart" id="line-chart" style="max-width:730px;height: 250px;"></div>
         <br>
         <div class="">
           <h2>Nepal Currency Exchange Rate of <br>{{\Carbon\Carbon::parse($datas['date'])->format('d F, Y')}} </h2>
@@ -319,5 +321,33 @@
     });
   }
 </script>
+<!-- jquery -->
+<script type="text/javascript">
+  var jquery = document.createElement('link')
+  jquery.rel = 'stylesheet'
+  jquery.href = 'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
+  jquery.type = 'text/css'
+  var godefer = document.getElementsByTagName('link')[0]
+  godefer.parentNode.insertBefore(jquery, godefer)
+</script>
+<!-- Morris -->
+<script type="text/javascript">
+  var morris = document.createElement('link')
+  morris.rel = 'stylesheet'
+  morris.href = 'https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css'
+  morris.type = 'text/css'
+  var godefer = document.getElementsByTagName('link')[0]
+  godefer.parentNode.insertBefore(morris, godefer)
+</script>
+<!-- bootstrap -->
+<script type="text/javascript">
+  var booststrap = document.createElement('link')
+  booststrap.rel = 'stylesheet'
+  booststrap.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+  booststrap.type = 'text/css'
+  var godefer = document.getElementsByTagName('link')[0]
+  godefer.parentNode.insertBefore(booststrap, godefer)
+</script>
+
 </body>
 </html>
