@@ -68,6 +68,9 @@
   .top-text{
       margin-top: 10px;
     }
+  .chart{
+    max-width:730px;height: 250px;
+  }
   @media only screen and (max-width: 600px) {
     .converter{
       height: auto;
@@ -75,13 +78,14 @@
     .convertSection{
       height: auto;
     }
-
+    .chart{
+      max-width: 600px;
+    }
   }
 </style>
 <body>
   <div id="fb-root"></div>
   <script defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=2266965833629953&autoLogAppEvents=1" nonce="CLc5uShd"></script>
-  <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 
   <div class="container">
     <div class="row">
@@ -153,7 +157,7 @@
       <div class="col-md-8">
         <h2>Monthly Exchange Rates</h2><br>
         <div></div>
-        <div class="chart" id="line-chart" style="max-width:730px;height: 250px;"></div>
+        <div class="chart" id="line-chart"></div>
         <br>
         <div class="">
           <h2>Nepal Currency Exchange Rate of <br>{{\Carbon\Carbon::parse($datas['date'])->format('d F, Y')}} </h2>
@@ -202,10 +206,10 @@
                 <p style="text-align: center; overflow-wrap: break-word; text-decoration: none;"><a href="maito:jinesh1094@gmail.com">jinesh1094@gmail.com</a></p>
                 <p style="text-align: center;" id="user-role">Web Developer</p>
                 <p>
-                  <a href="https://www.facebook.com/jinesh1094" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                  <a href="https://twitter.com/JineshSubedi" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                  <a href="https://www.linkedin.com/in/jinesh-subedi-541550154/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                  <a href="https://www.instagram.com/jinesh.officials/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/jinesh1094" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                  <a href="https://twitter.com/JineshSubedi" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                  <a href="https://www.linkedin.com/in/jinesh-subedi-541550154/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                  <a href="https://www.instagram.com/jinesh.officials/" target="_blank"><i class="fa fa-instagram"></i></a>
                 </p>
               </div>
             </div>
@@ -339,6 +343,8 @@
   var godefer = document.getElementsByTagName('link')[0]
   godefer.parentNode.insertBefore(morris, godefer)
 </script>
+<!-- fontawesome -->
+<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 <!-- bootstrap -->
 <script type="text/javascript">
   var booststrap = document.createElement('link')
