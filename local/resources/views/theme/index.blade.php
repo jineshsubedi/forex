@@ -81,6 +81,7 @@
 <body>
   <div id="fb-root"></div>
   <script defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=2266965833629953&autoLogAppEvents=1" nonce="CLc5uShd"></script>
+  <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 
   <div class="container">
     <div class="row">
@@ -193,7 +194,7 @@
             <div class="well profile col-md-12 col-lg-12 col-xs-12 text-center">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <figure>
-                     <img src="{{asset('images/jinesh.webp')}}" alt="" class="img-circle" style="width:80%;" id="user-img">
+                     <img data-src="{{asset('images/jinesh.webp')}}" alt="" class="lazyload" style="width:80%;" id="user-img">
                 </figure>
                 <h4 style="text-align:center;"><strong id="user-name"><a href="http://jineshsubedi.com.np/">Jinesh Subedi</a></strong></h4>
                 <p style="text-align: center; overflow-wrap: break-word; text-decoration: none;"><a href="maito:jinesh1094@gmail.com">jinesh1094@gmail.com</a></p>
@@ -216,10 +217,10 @@
   </div>
 <script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script defer src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script defer src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
 <script>
   $( function() {
     $( "#filter_date" ).datepicker({
