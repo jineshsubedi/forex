@@ -2,11 +2,19 @@
 <html>
 <head>
   <title>Currency Exchange</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
   <link rel="icon" href="{{asset('images/flag.png')}}" type="image/gif" sizes="16x16">
   <meta name="csrf-token" content="{{ csrf_token() }}" />
+  <meta name="title" content="Nepali Currency Converter">
+  <meta name="description" content="This site converts foreign currency to Nepalese currency and vice versa, also can be used to convert in any currency based on NRB standard rates.">
+  <meta name="keywords" content="Foreign Currency Converter, converter, Nepalese Converter, Site Converter, NRB forex, forex, Currency, Currency converter, useful links, Nepali site, jinesh subedi, jinesh, subedi, jineshsubedi.com.np, forex.jineshsubedi.com.np, currency charts, monthly currency charts">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Jinesh subedi">
 </head>
 <style type="text/css">
   body{
@@ -44,7 +52,7 @@
 </style>
 <body>
   <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=2266965833629953&autoLogAppEvents=1" nonce="CLc5uShd"></script>
+  <script defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=2266965833629953&autoLogAppEvents=1" nonce="CLc5uShd"></script>
 
   <div class="container">
     <div class="row">
@@ -148,10 +156,9 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><a href="https://www.nrb.org.np/forex/" target="_blank">NRB exchange rates</a></li>
             <li class="list-group-item"><a href="https://www.hamropatro.com/" target="_blank">Hamro Patro</a></li>
+            <li class="list-group-item"><a href="https://rollingnexus.com/" target="_blank">Rolling Nexus</a></li>
+            <li class="list-group-item"><a href="https://rollingnexus.com/" target="_blank">Rolling Nexus</a></li>
           </ul>
-        </div>
-        <div class="widget">
-          <iframe src="https://www.hamropatro.com/widgets/dateconverter.php" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:350px; height:150px;" allowtransparency="true"></iframe>
         </div>
         <div class="widget">
           <div class="fb-page" data-href="https://www.facebook.com/jineshcast/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jineshcast/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jineshcast/">Jineshsubedi.com.np</a></blockquote></div>
@@ -159,11 +166,11 @@
       </div>
     </div>
   </div>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script defer src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 <script>
   $( function() {
     $( "#filter_date" ).datepicker({
